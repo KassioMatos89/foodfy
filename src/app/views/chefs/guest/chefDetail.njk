@@ -1,0 +1,47 @@
+{% extends "guest/layout.njk" %}
+
+{% block content %}
+
+    <section class="container">
+
+        <div class="chef-container">
+            <div class="chef_detail_header">
+                <h2>Chef: {{chef.name}}</h2>
+            </div>
+            
+            <div class="chef_profile">
+                <div class="chef_photo_profile">
+                    <img src="{{chef.img}}" alt="{{chef.name}}">
+                </div>
+                <div class="chef_details">
+                    <h1>{{chef.name}}</h1>
+                    <p>{{recipes.length}} {{'receitas' if recipes.length > 1 else 'receita'}}</p>
+                </div>
+            </div>
+
+            <div class="chef_recipes">
+                <h3 class="recipe_title">Receitas</h3>
+                <div class="chef_recipes_created">
+
+                    {% for recipe in recipes %}
+
+                        <div class="chef_recipe">
+                            <div class="recipe_img">
+                                <img src="{{recipe.img}}" alt="{{recipe.title}}">
+                            </div>
+                            <div class="recipe_info">
+                                <h3>{{recipe.title}}</h3>
+                                <p>por {{chef.name}}</p>
+                                <a href="/recipes/{{recipe.id}}">Visualizar</a>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock content %}

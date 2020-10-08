@@ -1,0 +1,22 @@
+{% extends "admin/layout.njk" %}
+
+{% import "parts/card.njk" as card %}
+
+{% block content %}
+
+    {% call card.render('Criar usuário', 'users-register container') %}
+
+        <div class="buttons">
+            <button form="form-register-user" class="button" type="submit">Salvar</button>
+            <button class="button cancel" onclick="history.back()">Cancelar</button>
+        </div>
+
+        <form id="form-register-user" method="POST" action="/admin/users">
+            <div class="user-fields">
+                {% include "user/fields.njk" %}
+            </div>
+        </form>
+
+    {% endcall %}
+
+{% endblock content %}

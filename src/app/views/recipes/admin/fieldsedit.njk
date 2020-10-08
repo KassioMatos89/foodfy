@@ -1,0 +1,69 @@
+{% extends "recipes/admin/fields.njk" %}
+
+
+<div class="item">
+    <div>Imagem da receita</div>
+    <div id="photos-upload-recipe">
+        <input
+            id="photos-input-recipe"
+            type="file" 
+            name="photos_recipes" 
+            multiple
+            accept="image/*"
+            onchange="PhotosUpload.handleFileInputRecipe(event)"
+        >
+        <i class="material-icons">add</i>
+    </div>
+    <div id="photos-recipe-preview">
+
+    </div>
+</div>
+
+<div class="item">
+    <div>Ingredientes</div>
+    {% block ingredients %}
+        {% for ingredient in recipe.ingredients %}
+            <div id="ingredients">
+                <div class="ingredient">
+                    <input 
+                        type="text" 
+                        name="ingredients[]"
+                        value="{{ingredient}}"
+                    >
+                </div>
+            </div>
+        {% endfor %}
+    
+            <div class="link-action">
+                <a class="add-ingredient" onclick="AddItems.addIngredient(event)">Adicionar ingrediente</a>
+            </div>
+    {% endblock %}
+</div>
+
+<div class="item">
+    <div>Modo de preparo</div>
+
+        {% block preparation %}
+            {% for preparation in recipe.preparation %}
+                <div id="preparations">
+                    <div class="preparation">
+                        <input 
+                            type="text" 
+                            name="preparation[]"
+                            value="{{preparation}}"
+                        >    
+                    </div>    
+                </div>
+            {% endfor %}
+                
+                <div class="link-action">
+                    <a class="add-preparation" onclick="AddItems.addPreparation(event)">Adicionar novo passo</a>
+                </div>
+        
+        {% endblock %}
+</div>
+
+<div class="item">
+    <div>Informações adicionais</div>
+    <textarea name="info" cols="30" rows="10"></textarea>
+</div>

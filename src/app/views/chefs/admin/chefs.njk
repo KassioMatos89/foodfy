@@ -1,0 +1,42 @@
+{% extends "admin/layout.njk" %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="chef_list_container">
+
+            <div class="chef_detail_header">
+                <h2>Gerenciar chefes</h2>
+                <a href="/admin/chefs/create" class="button">Novo Chef</a>
+            </div>
+
+            <div class="chefs_list">
+
+                {% for chef in chefs %}
+                
+                    <div class="chef_card">
+                        <div class="chef_photo">
+                            <img src="{{chef.img}}" alt="{{chef.name}}">
+                        </div>
+                        <div class="chef_card_info">
+                            <p>{{ chef.name}}</p>
+                            <a href="/admin/chefs/registered/{{chef.id}}">Visualizar</a>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+            <div class="pagination"
+                data-page={{pagination.page}}
+                data-total={{pagination.total}}
+                data-filter={{filter}}
+            ></div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

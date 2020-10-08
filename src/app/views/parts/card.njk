@@ -1,0 +1,23 @@
+{% macro render(title, classes, title_detail, user, pagination) %}
+
+<section class="card-header {{classes}}">
+    <div class="header">
+        <h1>{{title}} {{title_detail}}</h1>
+        {% if user %}
+                <a href="/users/register" class="button">Novo</a>
+        {% endif %}
+    </div>
+    <div class="card-content">
+        {{ caller() }}
+    </div>
+
+    {% if pagination %}
+        <div class="pagination"
+            data-page={{pagination.page}}
+            data-total={{pagination.total}}
+            data-filter={{filter}}
+        ></div>
+    {% endif %}
+</section>
+
+{% endmacro %}

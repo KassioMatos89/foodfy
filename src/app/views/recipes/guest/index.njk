@@ -1,0 +1,12 @@
+{% extends "guest/layout.njk" %}
+{% import "guest/parts/section-recipes.njk" as section %}
+
+{% block head %}
+    <title>Foodfy - Listagem de receitas</title>
+{% endblock head %}
+
+{% block content %}
+
+    {{section.recipes('', 'recipe_guest_list', recipes, pagination)}}
+
+{% endblock content %}

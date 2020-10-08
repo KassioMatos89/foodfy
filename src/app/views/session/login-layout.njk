@@ -1,0 +1,19 @@
+<html>
+    <head>
+        {% block head %}
+            <title>Foodfy</title>
+        {% endblock head %}
+
+        {% include "session/parts/styles.njk" %}
+        
+    </head>
+    <body>
+
+        {% include "parts/messages.njk" %}
+
+        {% include "session/parts/header.njk" %}
+
+        {% block content %} {% endblock content %}
+
+    </body>
+</html>

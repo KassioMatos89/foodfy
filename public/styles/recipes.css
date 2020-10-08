@@ -1,0 +1,372 @@
+/* RECIPE GUEST LIST */
+
+/* .recipe_guest_list {
+    display: grid;
+    grid-template: 100px 280px 100px / 1fr;
+} */
+
+.recipe_guest_list .recipe-guest-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+/* RECIPE ADMIN LIST */
+.recipe_list {
+    display: grid;
+    grid-template: 100px 280px 100px / 1fr;
+}
+
+.recipe_detail_header {
+    display: grid;
+    grid-template-columns: 1fr 135px;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe_list .recipe-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.recipe_list .recipe-cards .recipe-card {
+    display: grid;
+    grid-template-columns: 172px 1fr;
+    grid-gap: 20px;
+}
+
+.recipe_list .recipe-cards .recipe-img img{
+    width: 172px;
+    height: 80px;
+
+    border-radius: 8.57px;
+}
+
+.recipe-card .recipe_detail p:first-child {
+    font-size: 18px;
+    font-family: 'Roboto-regular', sans-serif;
+
+    margin-bottom: 5px;
+}
+
+.recipe-card .recipe_detail p:nth-child(2) {
+    font-size: 14px;
+    color: #777777;
+    font-family: 'Roboto-regular', sans-serif;
+
+    margin-bottom: 10px;
+}
+
+.recipe-card .recipe_detail a {
+    font-size: 14px;
+    color: #6558C3;
+    font-family: 'Roboto-bold', sans-serif;
+}
+
+/* RECIPES CREATE FORM */
+
+form .item #photos-upload-recipe {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    width: 175px;
+    height: 145px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3.5px;
+}
+
+form .item #photos-upload-recipe:hover {
+    background: lightgray;
+}
+
+form .item #photos-upload-recipe i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 1%;
+    height: 1%;
+
+    color: #777777;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 300%;
+
+    transition: 400ms;
+
+    cursor: pointer;
+}
+
+form .item #photos-upload-recipe i:hover {
+    display: none;
+}
+
+form .item #photos-input-recipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+select:invalid {
+    color: #999999;
+}
+
+form .item #ingredients .ingredient,
+form .item #preparations .preparation {
+    margin-bottom: 10px;
+}
+
+form .item .link-action {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form .item .link-action .add-ingredient,
+form .item .link-action .add-preparation {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+form .item #photos-recipe-preview {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+
+    width: 100%;
+}
+
+form .item #photos-recipe-preview .photo {
+    position: relative;
+    width: 145px;
+    height: 145px;
+}
+
+form .item #photos-recipe-preview .photo img {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 3.5px;
+}
+
+form .item #photos-recipe-preview .photo i {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgba(255, 255, 255, 0.8);
+    color: red;
+
+    width: 145px;
+    height: 100%;
+    border-radius: 3.5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 400%;
+    cursor: pointer;
+
+    transition: 400ms;
+    opacity: 0;
+}
+
+form .item #photos-recipe-preview .photo:hover i {
+    opacity: 1;
+}
+
+/* RECIPE DETAIL */
+
+.form .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form .gallery {
+    width: 100%;
+}
+
+.form .gallery .highlight img {
+    width: 100%;
+    height: 280px;
+    
+    border-radius: 15px;
+    
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    cursor: zoom-in;
+}
+
+/* LIGHTBOX RECIPE GALLERY */
+.form .gallery .highlight .lightbox-target {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .7);
+
+    overflow: hidden;
+
+    z-index: 100;
+
+    top: -100%;
+    left: 0;
+    opacity: 0;
+
+    transition: opacity 400ms;
+}
+
+.form .gallery .highlight .lightbox-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+
+    width: 90%;
+    height: 90%;
+
+    object-fit: contain;
+}
+
+.form .gallery .highlight a.lightbox-close {
+    width: 50px;
+    height: 50px;
+
+    background: white;
+
+    position: absolute;
+    
+    top: -80;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 400ms;
+}
+
+/* GALLERY PREVIEW */
+.form .gallery .gallery-preview {
+    display: flex;
+    grid-template-columns: repeat(5, 50px);
+    justify-content: flex-end;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.form .gallery .gallery-preview img{
+    width: 50px;
+    height: 49.7px;
+    border-radius: 3.5px;
+    
+    object-fit: cover;
+    
+    margin-left: 10px;
+
+    cursor: pointer;
+    
+    opacity: 0.6;
+    transition: 400ms;
+}
+
+.form .gallery .gallery-preview img:hover,
+.form .gallery .gallery-preview img.active {
+    opacity: 1;
+}
+
+/* RECIPE INFO */
+.recipe_details .title_detail {
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.recipe_details .title_detail h1 {
+	font-size: 36px;
+    color: #111111;
+    margin-bottom: 4px;
+}
+
+.recipe_details .title_detail h3 {
+    font-size: 20px;
+    color: #777777;
+}
+
+.recipe_details .main_info .item {
+    margin-bottom: 41px;
+}
+
+.recipe_details .main_info .item > div:nth-child(1) {
+    display: flex;
+    
+    
+    font-size: 24px;
+    color: #111111;
+
+    margin-bottom: 19px;
+}
+
+.recipe_details .main_info .item > div:nth-child(1) p {
+    margin-left: 8px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999999;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.recipe_details .main_info .item > div:nth-child(2) {
+    font-size: 18px;
+    color: #444444;    
+}
+
+.recipe_details .main_info .item > div:nth-child(2) ul li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.recipe_details .main_info .item .hide-item.hide {
+    display: none;
+}
+
+.recipe_details .main_info .item .hide-item.show {
+    display: block;
+}
+
+/* RECIPE EDIT */
+.form_delete {
+    position: absolute;
+    top: 0;
+    right: 140px;
+}

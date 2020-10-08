@@ -1,0 +1,35 @@
+{% extends "admin/layout.njk" %}
+
+{% import "parts/card.njk" as card %}
+
+{% block content %}
+
+    {% call card.render('Usuários', 'users-list container', '', session.userId, pagination) %}
+
+        <div class="user-list">
+
+            {% for user in users %}
+                
+                <div class="user">
+                    <div class="user-name">
+                        {{user.name}}
+                    </div>
+                    <div class="user-email">
+                        {{user.email}}
+                    </div>
+                    <div class="user-actions">
+                        <a class="link-edit" href="/admin/users/{{user.id}}/edit">Editar</a>
+                        <button form="{{loop.index0}}" class="link-remove" type="submit">Remover</button>
+                    </div>
+                    <form id="{{loop.index0}}" class="form-delete" method="post" action="/admin/users?_method=DELETE">
+                        <input type="hidden" name="id" value="{{user.id}}">
+                    </form>
+                </div>                
+
+            {% endfor %}
+
+        </div>
+
+    {% endcall %}
+
+{% endblock content %}

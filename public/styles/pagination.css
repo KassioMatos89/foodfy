@@ -1,0 +1,17 @@
+.pagination {
+    margin: 15px;
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.pagination a,
+.pagination span {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.pagination a:hover {
+    filter: brightness(0.3);
+}

@@ -1,0 +1,240 @@
+:root {
+    --primary-color: #6558C3;
+    --secondary-color: #DC4747;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* BUTTONS */
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+
+    border-radius: 4px;
+    padding: 9px 20px;
+    cursor: pointer;
+}
+
+.button.cancel {
+    background-color: #8A8A8A;
+}
+
+.button.delete {
+    background-color: var(--secondary-color);
+}
+
+.button.save:hover {
+    background-color: rgb(19, 9, 95);
+}
+
+/* HEADER */
+header, footer {
+    background-color: #111111;
+    color: white;
+
+    width: 100%;
+    padding: 25px 0;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+header div.container {
+    display: grid;
+    grid-template-columns: 90.6px auto auto;
+    align-items: center;
+    gap: 50.4px;
+}
+
+header div.container .form-logout button{
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+    background: #111111;
+    color: #999999;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+}
+
+header div.container .form-logout button:hover{
+    color: #FFFFFF;
+}
+
+.logo {
+    background: url(/assets/logo.png);
+    height: 26.9px;
+}
+
+/* HEADER SEARCH */
+.search input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+/* PRIMARY MENU */
+nav.primary ul {
+    display: flex;
+    margin-right: 25px;
+}
+
+nav.primary li {
+    text-transform: uppercase;
+    margin-right: 25px;
+    color: #999999;
+}
+
+nav.primary li a {
+    font-size: 15px;
+    line-height: 25px;
+    color: #999999;
+}
+
+nav.primary li a.active {
+    font-weight: bold;
+    color: white;
+}
+
+nav.primary li a:hover {
+    font-weight: bold;
+    color: white;
+
+    transition: 400ms;
+}
+
+/* CHEF FORM */
+section.form {
+    margin-top: 55px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #111111;
+    font-weight: bold;
+}
+
+.header .actions {
+    text-align: right;
+}
+
+.header .actions button {
+    margin-left: 10px;
+}
+
+form .item {
+    margin-bottom: 30px;
+}
+
+form .item > div:nth-child(1) {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form .item input[type="text"],
+form .item input[type="email"],
+form .item input[type="password"],
+form .item select,
+form .item textarea {
+    width: 100%;
+    padding: 12px 16px;
+    
+    box-shadow: 2px 2px 2px -4px rgba(63, 63, 63, .9);
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+form .item textarea {
+    height: 257px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#btn_delete {
+    position: absolute;
+
+    top: 0;
+    right: 130;
+}
+
+/* INICIO RECIPE (CREATE, VIEW E EDIT */
+form .item .photos-container {
+    display: flex;
+        
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+/* SEARCH PAGE */
+.search-recipes {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+    margin-top: 50px;
+}
+
+.search-recipes .header-search {
+    margin-bottom: 48px;
+
+    font-size: 14px;
+    color: #333;
+}
+
+.search-recipes .header-search h2 {
+    font-size: 26px;
+    text-transform: capitalize;
+
+    margin-bottom: 8px;
+}
+
+/* Validate Errors */
+.input .error {
+    background-color: #e74c3c;
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+}

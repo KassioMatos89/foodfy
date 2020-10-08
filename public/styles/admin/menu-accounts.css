@@ -1,0 +1,43 @@
+.accounts {
+    position: relative;
+}
+
+.accounts .submenu {
+    position: absolute;
+    top: 32px;
+    left: 0;
+
+    margin-top: 8px;
+
+    width: 180px;
+
+    display: block;
+
+    transition: all 200ms;
+    opacity: 0;
+
+    visibility: hidden;
+}
+
+.accounts .submenu li a {
+    background: #111111;
+    
+    padding: 8px 16px;
+
+    font-size: 14px;
+
+    border-radius: 4px;
+    display: inline-block;
+
+    width: 100%;
+}
+
+.accounts .submenu li a:hover {
+
+}
+
+.accounts:hover .submenu {
+    top: 20px;
+    opacity: 1;
+    visibility: initial;
+}

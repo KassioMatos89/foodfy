@@ -1,0 +1,104 @@
+{% extends "guest/layout.njk" %}
+
+{% block content %}
+    <section class="container form">
+    
+        <div class="title">
+            <h2>Receita: {{recipe.title}}</h1>
+        </div>
+
+        <div class="gallery">
+            <div class="highlight">
+                {% if not recipe.src[0] %}
+                    <img src="http://placehold.it/940x280?text=RECEITA SEM IMAGEM">
+                {% else %}
+                    <img
+                        src="{{recipe.src[0].src}}"
+                        alt="{{recipe.src[0].name}}"
+                        onclick="Lightbox.open()"
+                    >
+                {% endif %}
+
+                <div class="lightbox-target">
+                    <img src="{{recipe.src[0].src}}" alt="{{recipe.src[0].name}}">
+                    <a
+                        href="#"
+                        class="lightbox-close"
+                        onclick="Lightbox.close()"
+                    >
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-preview">
+                {% for image in recipe.src %}
+                    <img
+                        src="{{image.src}}"
+                        alt="{{image.name}}"
+                        {% if loop.index0 == 0 %}
+                            class="active"
+                        {% endif %}
+                        onclick="ImageGallery.setImage(event)"
+                    >
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="recipe_details">
+            <div class="title_detail">
+                <h1>{{recipe.title}}</h1>
+                <h3 class="author">por {{recipe.chef_name}}</h3>
+            </div>
+            
+            <div class="main_info">
+
+                <div class="item">
+                    <div>
+                        <h4>Ingredientes</h4>
+                        <p onclick="HideShowElement.changeStatus(event)">
+                            ESCONDER
+                        </p>
+                    </div>
+                    <div class="hide-item">
+                        <ul>
+                            {% for ingredient in recipe.ingredients %}
+                                <li>- {{ ingredient }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h4>Modo de preparo</h4>
+                        <p onclick="HideShowElement.changeStatus(event)">
+                            ESCONDER
+                        </p>
+                    </div>
+                    <div class="hide-item">
+                        <ul>
+                            {% for preparation in recipe.preparation %}
+                                <li>- {{ preparation }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div>
+                        <h4>Informações adicionais</h4>
+                        <p onclick="HideShowElement.changeStatus(event)">
+                            ESCONDER
+                        </p>
+                    </div>
+                    <div class="hide-item">
+                        <p>{{ recipe.information }}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+{% endblock %}

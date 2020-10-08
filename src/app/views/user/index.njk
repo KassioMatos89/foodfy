@@ -1,0 +1,21 @@
+{% extends "admin/layout.njk" %}
+
+{% import "parts/card.njk" as card %}
+
+{% block content %}
+
+    {% call card.render('Bem vindo', 'users-index container', user.name) %}
+
+        <div class="buttons">
+            <button form="form-update-user" class="button" type="submit">Salvar</button>
+        </div>
+
+        <form id="form-update-user" method="POST" action="/admin/profile?_method=PUT">
+            <div class="user-fields">
+                {% include "user/index-fields.njk" %}
+            </div>
+        </form>
+
+    {% endcall %}
+
+{% endblock content %}

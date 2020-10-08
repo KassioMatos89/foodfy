@@ -1,0 +1,26 @@
+{% extends "admin/layout.njk" %}
+
+{% import "parts/card.njk" as card %}
+
+{% block content %}
+
+    {% call card.render('Atualizar Usuário', 'users-register container') %}
+
+        <div class="buttons">
+            <button form="form-delete" class="button delete" type="submit">Deletar</button>
+            <button form="form-edit-user" class="button" type="submit">Salvar</button>
+        </div>
+
+        <form id="form-edit-user" method="POST" action="/admin/users?_method=PUT">
+            <div class="user-fields">
+                {% include "user/fields.njk" %}
+                <input type="hidden" name="id" value="{{user.id}}">
+            </div>
+        </form>
+        <form id="form-delete" method="post" action="/admin/users?_method=DELETE">
+            <input type="hidden" name="id" value="{{user.id}}">
+        </form>
+
+    {% endcall %}
+
+{% endblock content %}

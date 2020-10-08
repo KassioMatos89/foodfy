@@ -1,0 +1,33 @@
+<header>
+    <div class="container">
+        <a href="/admin/recipes/registered">
+            <div class="logo">
+            </div>
+        </a>
+        <nav class="primary links">
+            <ul>
+                <li>
+                    <a href="/admin/recipes/registered">RECEITAS</a>
+                </li>
+                <li>
+                    <a href="/admin/chefs/registered">CHEFS</a>
+                </li>
+                <li class="accounts">
+                    <a href="/admin/users">USUÁRIOS</a>
+                    {% if session.userId %}
+                        <ul class="submenu">
+                            <li>
+                                <a href="/admin/profile">Minha conta</a>
+                            </li>
+                        </ul>
+                    {% endif %}
+                </li>
+                {% if session.userId %}
+                    <form class="form-logout" action="/users/logout" method="POST">
+                        <button>SAIR</button>
+                    </form>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</header>

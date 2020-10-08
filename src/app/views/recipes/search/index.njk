@@ -1,0 +1,12 @@
+{% extends "guest/layout.njk" %}
+{% import "guest/parts/section-recipes.njk" as section %}
+
+{% block head %}
+    <title>Foodfy Busca- {{filter}}</title>
+{% endblock head %}
+
+{% block content %}
+
+    {{section.recipes('Buscando por', 'recipe_list', recipes, pagination, filter)}}
+
+{% endblock content %}

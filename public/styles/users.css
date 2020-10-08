@@ -1,0 +1,104 @@
+.users-register,
+.users-index {
+    position: relative;
+}
+
+.users-register .buttons {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: 139px 139px;
+    grid-gap: 16px;
+}
+
+.users-index .buttons {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 139px;
+    height: 37px;
+}
+
+.users-index .buttons button {
+    width: 139px;
+    height: 37px;
+}
+
+.user-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.user-fields .input {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.user-fields .item .input {
+    position: relative;
+    width: 100%;
+}
+
+/* USERS LIST */
+
+.users-list {
+    display: grid;
+    grid-template: 70px 280px 100px / 1fr;
+}
+
+.users-list .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.users-list .header a { 
+    width: 139px;
+    height: 37px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.users-list .user-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 52px;
+}
+
+.user-list .user .user-name {
+    font-size: 18px;
+    line-height: 28px;
+    color: #111111;
+    margin-bottom: 4px;
+}
+
+.user-list .user .user-email {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    margin-bottom: 16px;
+}
+
+.user-list .user .user-actions a,
+.user-list .user .user-actions button{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.user-list .user .user-actions a.link-edit {
+    color: #6558C3;
+}
+
+.user-list .user .user-actions button.link-remove {
+    color: #F55A5A;
+    background: white;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+{% extends "guest/layout.njk" %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="chef_list_container">
+
+            <h1>Chefs</h1>
+
+            <div class="chefs_list">
+
+                {% for chef in chefs %}
+                
+                    <div class="chef_card">
+                        <div class="chef_photo">
+                            <img src="{{chef.img}}" alt="{{chef.name}}">
+                        </div>
+                        <div class="chef_card_info">
+                            <p>{{ chef.name}}</p>
+                            <a href="/chefs/{{chef.id}}">Visualizar</a>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+            <div class="pagination"
+                data-page={{pagination.page}}
+                data-total={{pagination.total}}
+                data-filter={{filter}}
+            ></div>
+        </div>
+
+    </div>
+
+{% endblock %}

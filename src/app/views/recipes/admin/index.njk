@@ -1,0 +1,12 @@
+{% extends "admin/layout.njk" %}
+{% import "admin/parts/section-recipes.njk" as section %}
+
+{% block head %}
+    <title>Foodfy - Gerenciar receitas</title>
+{% endblock head %}
+
+{% block content %}
+
+    {{section.recipes('Gerenciar receitas', 'recipe_list', recipes, 'recipes', 'Nova Receita', pagination)}}
+
+{% endblock content %}
