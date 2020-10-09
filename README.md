@@ -17,7 +17,7 @@
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-:small_blue_diamond: [Como rodar a aplicação :arrow_forward:](#como-rodar-a-aplicação)
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação)
 
 ## Visão Geral
 <p align="justify">
