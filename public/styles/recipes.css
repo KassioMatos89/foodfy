@@ -1,10 +1,4 @@
 /* RECIPE GUEST LIST */
-
-/* .recipe_guest_list {
-    display: grid;
-    grid-template: 100px 280px 100px / 1fr;
-} */
-
 .recipe_guest_list .recipe-guest-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,6 +27,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    height: 80px;
 }
 
 .recipe_list .recipe-cards .recipe-card {
