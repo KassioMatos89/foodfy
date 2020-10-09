@@ -12,7 +12,6 @@ module.exports = {
             let { page, limit } = req.query
 
             const recipes = await LoadRecipeService.loadPaginate({ page, limit }, 'recipesPaginate')
-
             const { recipesPaginated, pagination } = recipes
 
             return res.render('recipes/guest/index', { recipes: recipesPaginated, pagination })
