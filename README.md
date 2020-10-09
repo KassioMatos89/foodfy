@@ -1,4 +1,6 @@
-
+<div align=”center”>
+  <img align=”right” alt="Launchbase" src="/public/assets/LaunchBase.png" width="400" style="max-width:100%;">
+</div>
 
 # foodfy
 
