@@ -79,14 +79,10 @@ async function edit (req, res, next) {
     })
 
     if (userValidation == false && recipe.user_id != userId) {
-        let { page, limit } = req.query
-
-        const recipes = await LoadRecipeService.loadPaginate({ page, limit }, 'recipesPaginate')
-        const { recipesPaginated, pagination } = recipes
+        const recipes = await LoadRecipeService.load('recipes')
 
         return res.render('recipes/admin/index', {
-            recipes: recipesPaginated,
-            pagination,
+            recipes,
             error: 'Apenas administradores ou quem cadastrou pode editar a receita.'
         })
     }
