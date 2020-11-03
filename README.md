@@ -79,7 +79,14 @@ Para ficar mais interessante, vamos executar o comando abaixo  NA RAIZ DO PROJET
 node seed.js
 ```
 
-6- Agora, vamos configurar o serviço de emails, para que você consiga simular o envio e recebimento de emails quando cadastrar novos usuários no foodfy e precisar utilizar o email de reset de senha. Para isso, acesse o site do mailtrip, se cadastre e faça login com sua conta.
+6- Agora, vamos configurar o serviço de emails, para que você consiga simular o envio e recebimento de emails quando cadastrar novos usuários no foodfy e precisar utilizar o email de reset de senha. Para isso, acesse o site do mailtrip, se cadastre e faça login com sua conta. Em seguida, siga o passo a passo das imagens abaixo para criar um Inbox, pegar seus dados de acesso e configurar o projeto para a autenticação.
+
+<p align="center">
+  <img alt="Launchbase" src="/public/assets/1-Mailtrip.png" width="400" style="max-width:100%;">
+  <img alt="Launchbase" src="/public/assets/2-Mailtrip.png" width="400" style="max-width:100%;">
+  <img alt="Launchbase" src="/public/assets/3-Mailtrip.png" width="400" style="max-width:100%;">
+  <img alt="Launchbase" src="/public/assets/4-Mailtrip.png" width="400" style="max-width:100%;">
+</p>
 
 7- Pronto! execute o comando abaixo no terminal de comandos do Visual Studio para iniciar o projeto e assim que o servidor estiver no ar, acesse este URL em seu navegador http://localhost:3000/
 
