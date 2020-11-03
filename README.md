@@ -83,8 +83,14 @@ node seed.js
 
 <p align="center">
   <img alt="Launchbase" src="/public/assets/1-Mailtrip.png" width="400" style="max-width:100%;">
+</p>
+<p align="center">
   <img alt="Launchbase" src="/public/assets/2-Mailtrip.png" width="400" style="max-width:100%;">
+</p>
+<p align="center">
   <img alt="Launchbase" src="/public/assets/3-Mailtrip.png" width="400" style="max-width:100%;">
+</p>
+<p align="center">
   <img alt="Launchbase" src="/public/assets/4-Mailtrip.png" width="400" style="max-width:100%;">
 </p>
 
