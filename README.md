@@ -40,7 +40,7 @@
 ## Pré-requisitos
 :warning: Ter acesso a um banco de dados <strong>Postgresql</strong>
 
-## Como rodar a aplicação :arrow_forward:
+## Como rodar a aplicação
 Neste momento, vamos seguir algumas instruções para que você consiga clonar o projeto foodfy e executa-lo!
 
 1- No terminal de comandos do Visual Studio Code, acesse o diretório onde você hospedará o projeto.
