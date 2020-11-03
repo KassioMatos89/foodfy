@@ -40,7 +40,7 @@
 ## Pré-requisitos
 :warning: Ter acesso a um banco de dados <strong>Postgresql</strong>
 
-## Como rodar a aplicação
+## Como rodar a aplicação :arrow_forward:
 Neste momento, vamos seguir algumas instruções para que você consiga clonar o projeto foodfy e executa-lo!
 
 1- No terminal de comandos do Visual Studio Code, acesse o diretório onde você hospedará o projeto.
@@ -58,7 +58,7 @@ git clone https://github.com/KassioMatos89/foodfy.git
 ```
 
 3- Criando Banco de Dados.
-Em seguida, vamos criar o banco de dados que o sistema utilizara, para isso, 
+Em seguida, vamos criar o banco de dados que o sistema utilizará, para isso, 
 é necessário abrir o Database.sql que está na raiz do projeto que foi clonado.
 Ao abrir o arquivo, temos uma serie de instruções SQL que devem ser executadas no console de querys de seu BD exatamente na ordem que estão no arquivo.
 Para se certificar, abra a base "foodfy" que foi criada e verifique se foram criadas tabelas.
