@@ -17,7 +17,7 @@
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-:small_blue_diamond: [Como rodar a aplicação](#Como-rodar-a-aplicação)
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar)
 
 ## Visão Geral
 <p align="justify">
@@ -40,7 +40,7 @@
 ## Pré-requisitos
 :warning: Ter acesso a um banco de dados <strong>Postgresql</strong>
 
-## Como rodar a aplicação :arrow_forward:
+## <a name="como-rodar">Como rodar a aplicação :arrow_forward:<a/>
 Neste momento, vamos seguir algumas instruções para que você consiga clonar o projeto foodfy e executa-lo!
 
 1- No terminal de comandos do Visual Studio Code, acesse o diretório onde você hospedará o projeto.
