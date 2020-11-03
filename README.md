@@ -41,21 +41,49 @@
 :warning: Ter acesso a um banco de dados <strong>Postgresql</strong>
 
 ## Como rodar a aplicação :arrow_forward:
-No terminal, acesse a pasta que irá clonar projeto: 
+Neste momento, vamos seguir algumas instruções para que você consiga clonar o projeto foodfy e executa-lo!
 
+1- No terminal de comandos do Visual Studio Code, acesse o diretório onde você hospedará o projeto.
+
+Exemplo do comando para entrar no diretório desejado.
 ```
 cd "caminho do diretório"
 ```
 
-Clonar o projeto com o comando:
+
+2- Ainda no terminal de comandos, clonar o projeto com o comando:
 
 ```
 git clone https://github.com/KassioMatos89/foodfy.git
 ```
 
+3- Criando Banco de Dados.
+Em seguida, vamos criar o banco de dados que o sistema utilizara, para isso, 
+é necessário abrir o Database.sql que está na raiz do projeto que foi clonado.
+Ao abrir o arquivo, temos uma serie de instruções SQL que devem ser executadas no console de querys de seu BD exatamente na ordem que estão no arquivo.
+Para se certificar, abra a base "foodfy" que foi criada e verifique se foram criadas tabelas.
 
+IMPORTANTE: O arquivo cria uma base com o nome "foodfy". Então, antes de executar o script certifique-se 
+que não exista nenhuma base com este nome em seu SGBD.
 
+4- Agora vamos instalar o pacote do node com as bibliotecas que são necessárias para o correto funcionamento do foodfy.
+Para isso, executar o comando abaixo.
 
+```
+npm install
+```
+5- Pronto, estamos quase prontos para executar o foodfy! 
+Para ficar mais interessante, vamos executar o comando abaixo  NA RAIZ DO PROJETO para popularmos a base de dados com informações iniciais para utilização do sistema.
+
+```
+node seed.js
+```
+
+6- Pronto! execute o comando abaixo no terminal de comandos do Visual Studio para iniciar o projeto e assim que o servidor estiver no ar, acesse este URL em seu navegador http://localhost:3000/
+
+```
+npm start
+```
 
 
 
