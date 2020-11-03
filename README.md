@@ -82,19 +82,21 @@ node seed.js
 6- Agora, vamos configurar o serviço de emails, para que você consiga simular o envio e recebimento de emails quando cadastrar novos usuários no foodfy e precisar utilizar o email de reset de senha. Para isso, acesse o site do <a href="https://mailtrap.io/">mailtrip</a>, se cadastre e faça login com sua conta. Em seguida, siga o passo a passo das imagens abaixo para criar um Inbox, pegar seus dados de acesso e configurar o projeto para a autenticação.
 
 <p align="center">
-  Criando caixa de emails.
+  <p>Criando caixa de emails.</p>
   <img alt="Launchbase" src="/public/assets/1-Mailtrip.png" width="400" style="max-width:100%;">
 </p>
 <p align="center">
-  Acessando as configurações da caixa.
+  <p>Acessando as configurações da caixa.</p>
   <img alt="Launchbase" src="/public/assets/2-Mailtrip.png" width="400" style="max-width:100%;">
 </p>
 <p align="center">
-  Selecionar a opção <strong>Nodemailer</strong> e copiar os dados
+  <p>Selecionar a opção <strong>Nodemailer</strong> e copiar os dados</p>
   <img alt="Launchbase" src="/public/assets/3-Mailtrip.png" width="400" style="max-width:100%;">
 </p>
 <p align="center">
-  Com dos dados em mãos, vamos editar o arquivo do projeto que faz autenticação com o mailtrip. Abra o arquivo <strong>mailer.js</strong> que fica em <strong>src/lib</strong>.
+  <p>
+    Com dos dados em mãos, vamos editar o arquivo do projeto que faz autenticação com o mailtrip. Abra o arquivo <strong>mailer.js</strong> que fica em <strong>src/lib</strong>.
+  </p>
   <img alt="Launchbase" src="/public/assets/4-Mailtrip.png" width="400" style="max-width:100%;">
 </p>
 
