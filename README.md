@@ -95,7 +95,7 @@ node seed.js
 </p>
 <p align="center">
   <p>
-    Com dos dados em mãos, vamos editar o arquivo do projeto que faz autenticação com o mailtrip. Abra o arquivo <strong>mailer.js</strong> que fica em <strong>src/lib</strong>.
+    Com dos dados em mãos, vamos editar o arquivo do projeto que faz autenticação com o mailtrip. Abra o arquivo <strong>mailer.js</strong> que fica em <strong>src/lib</strong> e insira seus dados de autenticação, assim você recebera neste Inbox os emails do <strong>Foodfy</strong>.
   </p>
   <img alt="Launchbase" src="/public/assets/4-Mailtrip.png" width="400" style="max-width:100%;">
 </p>
