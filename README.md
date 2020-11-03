@@ -79,7 +79,9 @@ Para ficar mais interessante, vamos executar o comando abaixo  NA RAIZ DO PROJET
 node seed.js
 ```
 
-6- Pronto! execute o comando abaixo no terminal de comandos do Visual Studio para iniciar o projeto e assim que o servidor estiver no ar, acesse este URL em seu navegador http://localhost:3000/
+6- Agora, vamos configurar o serviço de emails, para que você consiga simular o envio e recebimento de emails quando cadastrar novos usuários no foodfy e precisar utilizar o email de reset de senha. Para isso, acesse o site do mailtrip, se cadastre e faça login com sua conta.
+
+7- Pronto! execute o comando abaixo no terminal de comandos do Visual Studio para iniciar o projeto e assim que o servidor estiver no ar, acesse este URL em seu navegador http://localhost:3000/
 
 ```
 npm start
