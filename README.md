@@ -9,7 +9,7 @@
   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
-### Tópicos 
+## Tópicos 
 
 :small_blue_diamond: [Visão Geral](#visão-geral)
 
@@ -18,6 +18,8 @@
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar)
+
+:small_blue_diamond: [Utilizando o Foodfy](#utilizando-o-foodfy)
 
 ## Visão Geral
 <p align="justify">
@@ -104,5 +106,8 @@ node seed.js
 npm start
 ```
 
+## Utilizando o Foodfy
+
+Agora que já instalamos tudo e executamos o projeto, podemos ver abaixo uma breve utilização do sistema, mas não deixe de utilizar e aproveitar os recursos disponíveis nele!
 
 
