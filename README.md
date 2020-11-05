@@ -57,14 +57,12 @@ cd "caminho do diretório"
 git clone https://github.com/KassioMatos89/foodfy.git
 ```
 
-3- Criando Banco de Dados.
-Em seguida, vamos criar o banco de dados que o sistema utilizará, para isso, 
-é necessário abrir o Database.sql que está na raiz do projeto que foi clonado.
-Ao abrir o arquivo, temos uma serie de instruções SQL que devem ser executadas no console de querys de seu BD exatamente na ordem que estão no arquivo.
+<p>3- Hora de criar o Banco de Dados para o Foodfy!</p>
+<p>
+Abra o arquivo Database.sql que está na raiz do projeto que foi clonado. Neste arquivo, temos todas as querys necessárias que devem ser executadas no seu BD exatamente na ordem que estão no arquivo.
 Para se certificar, abra a base "foodfy" que foi criada e verifique se foram criadas tabelas.
-
-IMPORTANTE: O arquivo cria uma base com o nome "foodfy". Então, antes de executar o script certifique-se 
-que não exista nenhuma base com este nome em seu SGBD.
+</p>
+<p><strong>IMPORTANTE:</strong> O arquivo cria uma base com o nome "foodfy". Então, antes de executar o script certifique-se que não exista nenhuma base com este nome em seu SGBD.</p>
 
 4- Agora vamos instalar o pacote do node com as bibliotecas que são necessárias para o correto funcionamento do foodfy.
 Para isso, executar o comando abaixo.
