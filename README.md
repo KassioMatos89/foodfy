@@ -45,41 +45,32 @@
 ## <a name="como-rodar">Como rodar a aplicação :arrow_forward:<a/>
 Neste momento, vamos seguir algumas instruções para que você consiga clonar o projeto foodfy e executa-lo!
 
-1- No terminal de comandos do Visual Studio Code, acesse o diretório onde você hospedará o projeto.
-
-Exemplo do comando para entrar no diretório desejado.
-```
-cd "caminho do diretório"
-```
-
-
-2- Ainda no terminal de comandos, clonar o projeto com o comando:
+1- Faça um clone do projeto no diretório que dejar com o comando abaixo.
 
 ```
 git clone https://github.com/KassioMatos89/foodfy.git
 ```
 
-<p>3- Hora de criar o Banco de Dados para o Foodfy!</p>
+<p>2- Hora de criar o Banco de Dados para o Foodfy!</p>
 <p>
-Abra o arquivo Database.sql que está na raiz do projeto que foi clonado. Neste arquivo, temos todas as querys necessárias que devem ser executadas no seu BD exatamente na ordem que estão no arquivo.
-Para se certificar, abra a base "foodfy" que foi criada e verifique se foram criadas tabelas.
+Abra o arquivo Database.sql que está na raiz do projeto que foi clonado e execute as querys na ordem que estão.
 </p>
 <p><strong>IMPORTANTE:</strong> O arquivo cria uma base com o nome "foodfy". Então, antes de executar o script certifique-se que não exista nenhuma base com este nome em seu SGBD.</p>
 
-4- Agora vamos instalar o pacote do node com as bibliotecas que são necessárias para o correto funcionamento do foodfy.
-Para isso, executar o comando abaixo.
+3- Execute o comando abaixo para realizar a instalação das dependências do projeto!
 
 ```
 npm install
 ```
-5- Pronto, estamos quase prontos para executar o foodfy! 
-Para ficar mais interessante, vamos executar o comando abaixo  NA RAIZ DO PROJETO para popularmos a base de dados com informações iniciais para utilização do sistema.
+
+4- Pronto, estamos quase prontos para executar o foodfy! 
+Para ficar mais interessante, vamos executar o comando abaixo para popularmos a base de dados com dados para que você consiga utilizar o sistema!
 
 ```
 node seed.js
 ```
 
-6- Agora, vamos configurar o serviço de emails, para que você consiga simular o envio e recebimento de emails quando cadastrar novos usuários no foodfy e precisar utilizar o email de reset de senha. Para isso, acesse o site do <a href="https://mailtrap.io/">mailtrip</a>, se cadastre e faça login com sua conta. Em seguida, siga o passo a passo das imagens abaixo para criar um Inbox, pegar seus dados de acesso e configurar o projeto para a autenticação.
+5- Agora, vamos configurar o serviço de emails, para que você consiga simular o envio e recebimento de emails quando cadastrar novos usuários no foodfy e precisar utilizar o email de reset de senha. Para isso, acesse o site do <a href="https://mailtrap.io/">mailtrip</a>, se cadastre e faça login com sua conta. Em seguida, siga o passo a passo das imagens abaixo para criar um Inbox, pegar seus dados de acesso e configurar o projeto para a autenticação.
 
 <p align="center">
   <p>Criando caixa de emails.</p>
@@ -100,7 +91,7 @@ node seed.js
   <img alt="Launchbase" src="/public/assets/4-Mailtrip.png" width="400" style="max-width:100%;">
 </p>
 
-7- Pronto! execute o comando abaixo no terminal de comandos do Visual Studio para iniciar o projeto e assim que o servidor estiver no ar, acesse este URL em seu navegador http://localhost:3000/
+6- Pronto! execute o comando abaixo no terminal de comandos do Visual Studio para iniciar o projeto e assim que o servidor estiver no ar, acesse este URL em seu navegador http://localhost:3000/
 
 ```
 npm start
