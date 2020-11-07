@@ -109,7 +109,6 @@ async function put (req, res, next) {
         const { userId } = req.session
         
         const userValidation = await isAdmin(userId)
-        console.log(userValidation)
 
         // Check if has all fields
         const fillAllFields = checkAllFields(req.body)
@@ -128,7 +127,6 @@ async function put (req, res, next) {
 
         const user = await User.find(id)
 
-        // console.log(user)
         req.user = user
 
         next()
