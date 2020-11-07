@@ -35,6 +35,7 @@ const LoadService = {
     loadPaginate(params, service, filter) {
         this.filter = filter
         this.params = params
+
         return this[service]()
     },
     async recipe() {
@@ -68,8 +69,9 @@ const LoadService = {
             const paramsAdjusted = setPagination(this.params, 6)
 
             const { page, limit, offset } = paramsAdjusted
+            const filter = this.filter
 
-            const recipes = await Recipe.paginate({ limit, offset })
+            const recipes = await Recipe.paginate({ limit, offset, filter })
             const recipesPromise = recipes.map(format)
             
             const recipesPaginated = await Promise.all(recipesPromise)
