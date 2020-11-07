@@ -101,10 +101,11 @@ npm start
 
 Agora que já instalamos tudo e executamos o projeto, podemos utilizar o Foodfy! As paginas iniciais são para visitantes para que os mesmos possam ver as receitas cadastradas no site e até ver receitas cadastradas por seus chefes FAVORITOS!
 
-Para utilizar a área administrativa, clique no menu Login na parte superior da página, em seguida acesse com usuário e senha de administrador com os dados abaixo:
+Para utilizar a área administrativa, clique no menu Login na parte superior da página, em seguida acesse com usuário e senha de administrador com os dados abaixo.
+<p>
 Email: admin@foodfy.com.br
 Senha: 1111
-
+</p>
 Com esse usuário é possível realizar qualquer alteração no site, então pode-se cadastrar, alterar e excluir as receitas, chefes e usuários.
 
 Se divirta realizando todas essas operações mencionadas e até mesmo realizando o cadastro de novo usuário, reset de senha de algum deles para conferir o recebimento de email dessas operações.
