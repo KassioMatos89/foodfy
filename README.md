@@ -103,8 +103,8 @@ Agora que já instalamos tudo e executamos o projeto, podemos utilizar o Foodfy!
 
 Para utilizar a área administrativa, clique no menu Login na parte superior da página, em seguida acesse com usuário e senha de administrador com os dados abaixo.
 <p>
-Email: admin@foodfy.com.br <br>
-Senha: 1111
+<strong>Email:</strong> admin@foodfy.com.br <br>
+<strong>Senha:</strong> 1111
 </p>
 Com esse usuário é possível realizar qualquer alteração no site, então pode-se cadastrar, alterar e excluir as receitas, chefes e usuários.
 
