@@ -5,6 +5,12 @@
     grid-gap: 20px;
 }
 
+.recipe_search_list .recipe-guest-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
 .pagination {
     display: flex;
     justify-content: center;

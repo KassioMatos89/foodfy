@@ -2,11 +2,11 @@
 {% import "guest/parts/section-recipes.njk" as section %}
 
 {% block head %}
-    <title>Foodfy Busca- {{filter}}</title>
+    <title>Foodfy Busca - {{filter}}</title>
 {% endblock head %}
 
 {% block content %}
 
-    {{section.recipes('Buscando por', 'recipe_list', recipes, pagination, filter)}}
+    {{section.recipes('Buscando por', 'recipe_search_list', recipes, pagination, filter)}}
 
 {% endblock content %}
